@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.neon-border {
+  box-shadow: 0 0 5px #ADFF2F, 0 0 10px #ADFF2F, 0 0 15px #ADFF2F, 0 0 20px #ADFF2F;
+}
+
